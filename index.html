@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Recipe Website</title>
+  </head>
+  <body class="overflow-x-hidden">
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between p-5 bg-white shadow-md container mx-auto">
+      <!-- Logo -->
+      <div>
+        <a href="#"><img src="./IMAGE/imageslogo-removebg-preview.png" alt="simple recipe" class="w-32"></a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="flex space-x-6 text-lg font-normal">
+        <a href="index.html" class="text-lime-700 hover:text-lime-900"><i class="fa fa-home"></i> Home</a>
+        <a href="about.html" class="text-lime-700 hover:text-lime-900"><i class="fa fa-ban"></i> About</a>
+        <a href="recipe.html" class="text-lime-700 hover:text-lime-900"><i class="fa fa-recycle"></i> Recipes</a>
+        <a href="tags.html" class="text-lime-700 hover:text-lime-900"><i class="fa fa-tags"></i> Tags</a>
+      </nav>
+
+      <!-- Contact Button -->
+      <button class="px-4 py-2 text-lg bg-yellow-500 text-lime-700 rounded-md shadow-md hover:bg-yellow-600 hover:text-black mr-20">
+        Contact <i class="fa fa-address-book-o"></i>
+      </button>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto my-4">
+      <section class="relative w-200 h-80 bg-sky-400 rounded-md flex flex-wrap justify-center items-center ml-50">
+        <img src="./IMAGE/istockphoto-638858678-612x612.jpg" alt="Recipes"
+          class="absolute inset-0 w-full h-full object-cover rounded-md">
+        <div class="absolute bg-sky-500 p-4 rounded-md text-4xl font-serif font-semibold text-purple-900 capitalize">
+          Classic Recipes Overlay
+        </div>
+      </section>
+
+      <!-- Recipe List -->
+      <section class="flex flex-wrap justify-between mt-15 ml-20">
+        <!-- List -->
+        <div class="w-full sm:w-1/4 p-5">
+          <h3 class="text-xl font-semibold capitalize">Recipes</h3>
+          <ul class="text-base underline">
+            <li><a href="https://www.loveandlemons.com">Breakfast</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Beverage</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Coffee</a></li>
+          </ul>
+        </div>
+
+        <!-- Recipe Images -->
+        <div class="w-full sm:w-3/4 grid grid-cols-2 sm:grid-cols-4 gap-4 p-3 mt-10">
+          <figure class="text-center">
+            <img src="./IMAGE/images3-removebg-preview.png" alt="Salad" class="w-full h-40 object-cover rounded-md">
+            <figcaption class="mt-2 capitalize">Salads | <time>10min</time></figcaption>
+          </figure>
+          <figure class="text-center">
+            <img src="./IMAGE/MushroomSoup5-500x500-removebg-preview.png" alt="Mushroom Soup" class="w-full h-40 object-cover rounded-md">
+            <figcaption class="mt-2 capitalize">Mushroom Soup | <time>15min</time></figcaption>
+          </figure>
+          <figure class="text-center">
+            <img src="./IMAGE/images1-removebg-preview.png" alt="Sandwich" class="w-full h-40 object-cover rounded-md">
+            <figcaption class="mt-2 capitalize">Sandwich | <time>15min</time></figcaption>
+          </figure>
+          <figure class="text-center">
+            <img src="./IMAGE/Fries-with-rosemary-salt_1-removebg-preview.png" alt="Fries" class="w-full h-40 object-cover rounded-md">
+            <figcaption class="mt-2 capitalize">Fries | <time>15min</time></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Search Box -->
+      <section class="flex justify-center my-10">
+        <div class="relative">
+          <label for="search" class="block text-lg font-semibold capitalize text-center">Other you need</label>
+          <input type="search" name="search" placeholder="Search"
+            class="border w-80 px-4 py-2 rounded-full shadow-md outline-none">
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-sky-700 text-white py-10 text-center w-full">
+      <h1 class="text-3xl capitalize">Our Page You Browser</h1>
+      <ul class="mt-5 space-y-3 block">
+        <li><a href="#" class="underline"><i class="fa fa-h-square"></i> FastSmartHotel</a></li>
+        <li><a href="#" class="underline"><i class="fa fa-instagram"></i> Instagram</a></li>
+        <li><a href="#" class="underline"><i class="fa fa-times"></i> X</a></li>
+        <li><a href="#" class="underline"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+      </ul>
+      <p class="mt-20">&copy2-2025 simple recipe build by Mr Patrick</p>
+    </footer>
+
+  </body>
+</html>
